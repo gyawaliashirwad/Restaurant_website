@@ -1,0 +1,75 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order-NowJashn Cafe And Restaurant</title>
+    <link rel="stylesheet" href="../css/order.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">
+         <a href="https://codepen.io/Ashirwad-G/pen/LYoVGdG" class="logo">
+                <img src="https://imgur.com/gRYqmX7.png" alt="Jashn Cafe"></a>
+      </label>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a class="active" href="https://codepen.io/Ashirwad-G/pen/QWRbyrB">Order Now</a></li>
+        
+        <li><a href="home.html#map">Location</a></li>
+       
+      </ul>
+    </nav>
+  
+    <div class="container">
+        <h1>ORDER NOW</h1>
+        <div class="category">
+            <label><input type="radio" name="category" value="Main Dishes" onclick="showCategory('mainDishes')"> Main Dishes</label>
+            <label><input type="radio" name="category" value="Curries" onclick="showCategory('curries')"> Curries</label>
+            <label><input type="radio" name="category" value="Bread" onclick="showCategory('bread')"> Bread</label>
+            <label><input type="radio" name="category" value="Drinks" onclick="showCategory('drinks')"> Drinks</label>
+        </div>
+        <div id="items-container"></div>
+    </div>
+  
+  <div class="cart"><h1>CART</h1>
+    <div id="cart-container"></div>
+    <div class="cart-total">
+      <span>TOTAL:</span>
+      <span id="total-price"> 0 yen</span>
+      </div>
+  <button id="proceed-btn">PROCEED</button>
+    </div>
+  
+   <script src="../JAvascript/order.js" type="text/javascript"></script>
+ <footer>
+    <div class="footer-container">
+  
+        <div class="hours">
+            <h2>OPENING HOURS</h2>
+            <ul>
+              <li><b>Tuesday-Sunday</b></li>
+                <li>11:00AM-2:30PM</li>
+                <li>5:00pM-10:30PM</li>
+              <li><b>Monday Holiday</b></li>
+                <li>If Monday National Holiday, Tuesday is Holiday</li>
+            </ul>
+        </div>
+        <div class="contact-us">
+            <h2>CONTACT INFORMATION</h2>
+          <a href="tel:03-4360-3693" class="phone-number">03-4360-3693</a>
+          <a href="mailto:info@jashntokyo.com">info@jashntokyo.com</a>
+              <div class="social-icons">
+        <a href="https://www.facebook.com/" class="social-icon"><img src="https://image.similarpng.com/thumbnail/2020/04/Golden-Facebook-icon-png.png" alt="Social Icon 2"></a>
+                 <a href="https://www.instagram.com/?hl=en" class="social-icon"><img src="https://clipartcraft.com/images/instagram-logo-gold.png" alt="Social Icon 2"></a>
+                 <a href="https://www.youtube.com/" class="social-icon"><img src="https://cdn.shopify.com/s/files/1/0819/6305/files/social_media_icon_3_1600x.jpg?v=1587791105" alt="Social Icon 2"></a>
+    </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
